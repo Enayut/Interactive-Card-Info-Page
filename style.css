@@ -4,7 +4,7 @@
     --Neutral-White: hsl(0, 0%, 100%);
     --Neutral-light-voilet: hsl(270, 3%, 87%);
     --Neutral-grey-voilet: hsl(279, 6%, 55%);
-    --Neutral-dark-voilet:  hsl(278, 68%, 10%);
+    --Neutral-dark-voilet:  hsl(278, 77%, 10%);
     --Primary-active: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
     --Primart-false: hsl(0, 100%, 66%);
 }
@@ -17,52 +17,77 @@
 .wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
 }
 .back-mob{
     position: absolute;
     object-fit: cover;
     width: 100%;
+    height: 52%;
 }
-.card span{
-    position: absolute;
-    z-index: 4;
-    color: var(--Neutral-White);
+.card{
+    position: relative;
+    width: 100%;
+    height: 40.6%;
 }
-#card-back{
+.back-card{
     position: absolute;
-    top: 4.4%;
-    left: 19.4%;
+    top: 11.5%;
+    left: 18%;
     z-index: 2;
     width: 77%;
 }
-#card-front{
+.front-card{
     position: absolute;
     top: 17.7%;
-    right: 19.2%;
+    left: 4.5%;
     z-index: 3;
     width: 77%;
 }
+#card-back{
+    margin-top: 11.5%;
+    width: 100%;
+}
+#card-front{
+    margin-top: 42.5%;
+    width: 100%;
+}
+.card span{
+    position: inherit;
+    z-index: 4;
+    color: var(--Neutral-White);
+}
 #front-top{
-    top: 30.1%;
-    left: 8.8%;
-    font-size: 18px;
+    top: 75%;
+    left: 7%;
+    width: 100%;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 #front-name{
-    top: 35.5%;
-    left: 8.8%;
+    top: 88%;
+    left: 7%;
     font-size: 10px;
     font-weight: 300;
 }
 #front-date{
-    top: 35.5%;
-    left: 65.5%;
+    top: 88%;
+    left: 82%;
     font-size: 10px;
     font-weight: 300;
 }
 #CVC{
-    top: 14.5%;
+    top: 53.5%;
     left: 79.2%;
     font-size: 10px;
     font-weight: 300;
+}
+#card-logo{
+    position: absolute;
+    width: 20%;
+    top: 49%;
+    left: 7%;
 }
