@@ -27,12 +27,16 @@
         </div>
       <div class="form">
         <form>
-          <label>Cardholder Name</label>
-          <input type="text" placeholder="e.g. Jane Appleseed">
-          <label>Card Number</label>
-          <input type="text" placeholder="e.g. 1234 5678 9123 0000">
-          <label> Exp. Date (MM/YY)</label><label>CVC</label>
-          <input type="text" placeholder="MM"><input type="text" placeholder="YY"><input type="text" placeholder="e.g. 123">
+          <label>CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="Name">
+          <label>CARD NUMBER</label>
+          <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="CardNumber">
+          <label class="l" style="width: 57%;"> EXP. DATE (MM/YY)</label>
+          <label class="l" style="width: 43%;">CVC</label>
+          <div class="stupid">
+            <input type="number" placeholder="MM" id="M"><input type="number" placeholder="YY" id="Y">
+            <input type="number" placeholder="e.g. 123" id="CV">
+          </div>
           <button>Confirm</button>
         </form>
       </div>
