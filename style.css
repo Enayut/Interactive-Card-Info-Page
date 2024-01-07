@@ -155,7 +155,7 @@ form input[type="text"]:focus{
     margin-bottom: 25px;
 }
 #M{
-    width: 25%;
+    width: 50%;
     margin-right: 3%;
     padding: 9px 12px;
     font-size: 18px;
@@ -165,7 +165,7 @@ form input[type="text"]:focus{
     outline: none;
 }
 #M:focus{
-    width: 25%;
+    width: 50%;
     margin-right: 3%;
     padding: 9px 12px;
     font-size: 18px;
@@ -176,7 +176,7 @@ form input[type="text"]:focus{
     border-radius: 10px;
 }
 #Y{
-    width: 25%;
+    width: 50%;
     margin-right: 3%;
     padding: 9px 12px;
     font-size: 18px;
@@ -186,7 +186,7 @@ form input[type="text"]:focus{
     outline: none;
 }
 #Y:focus{
-    width: 25%;
+    width: 50%;
     margin-right: 3%;
     padding: 9px 12px;
     font-size: 18px;
@@ -205,6 +205,7 @@ form input[type="text"]:focus{
     border: 1px solid;
     border-color: var(--Neutral-light-voilet);
     outline: none;
+    display: block;
 }
 #CV:focus{
     width: 50%;
@@ -227,4 +228,21 @@ button{
     color: var(--Neutral-White);
     font-size: 18px;
     border-radius: 10px;
+}
+#date{
+    width: fit-content;
+    display: flex;
+}
+.error{
+    color: var(--Primart-false);
+    margin-top: 5px;
+    display: block;
+}
+.year{
+    display: flex;
+    flex-direction: column;
+}
+.month{
+    display: flex;
+    flex-direction: column;
 }

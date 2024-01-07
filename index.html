@@ -26,18 +26,32 @@
           </div>
         </div>
       <div class="form">
-        <form>
+        <form id = "form" action="/">
           <label>CARDHOLDER NAME</label>
           <input type="text" placeholder="e.g. Jane Appleseed" id="Name">
+          <span class="empty"></span>
           <label>CARD NUMBER</label>
           <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="CardNumber">
+          <span class="empty" style="width: 100%;"></span>
           <label class="l" style="width: 57%;"> EXP. DATE (MM/YY)</label>
           <label class="l" style="width: 43%;">CVC</label>
           <div class="stupid">
-            <input type="number" placeholder="MM" id="M"><input type="number" placeholder="YY" id="Y">
-            <input type="number" placeholder="e.g. 123" id="CV">
+            <div id="date">
+              <div class="month">
+                <input type="number" placeholder="MM" id="M">
+                <span class="empty"></span>
+              </div>
+              <div class="year">
+                <input type="number" placeholder="YY" id="Y">
+                <span class="empty"></span>
+              </div>
+            </div>
+            <div id="CVdiv">
+              <input type="number" placeholder="e.g. 123" id="CV">
+              <span class="empty"></span>
+            </div>
           </div>
-          <button>Confirm</button>
+          <button type="submit">Confirm</button>
         </form>
       </div>
       <div class="complete-state" style="display: none;">
@@ -45,6 +59,7 @@
         <p>We've added your card details</p>
         <button>Continue</button>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
